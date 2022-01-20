@@ -1,0 +1,381 @@
+@font-face {
+    font-family: "Bloggersansbold"; 
+    src: url("../fonts/Bloggersansbold.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 700; 
+} 
+@font-face {
+    font-family: "Bloggersansmedium"; 
+    src: url("../fonts/Bloggersansmedium.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 500; 
+} 
+@font-face {
+    font-family: "ProximaNova-Regular"; 
+    src: url("../fonts/ProximaNova-Regular.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: 400; 
+} 
+
+body{
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-weight: 400; 
+    font-size: 24px;
+    color: #fff;
+}
+
+.container{
+    max-width: 1875px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-small{
+    max-width: 1234px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url('../images/header-bg.jpg');
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    margin-bottom: 150px;
+}
+.wrapper{
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 132px;
+}
+.header-inner_logo{
+    width: 286px;
+    height: 112px;
+}
+.header-inner_call{
+    font-family: "Bloggersansmedium";
+    font-weight: 500; 
+    font-size: 34px;
+    margin-left: 195px;
+}
+
+.header-inner_list{
+    display: flex;
+    align-items: center;
+}
+.header-inner_list-link{
+    display: inline-block;
+}
+.header-inner_list-link + .header-inner_list-link{
+    margin-left: 50px;
+}
+
+.header-inner_link{
+    padding: 15px 110px 15px 75px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    color: #1A202C;
+    background-color: #FFD324;
+    border-radius: 30px;
+    box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+    font-size: 20px;
+    position: relative;
+}
+
+.header-inner_link::after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/arrow.svg");
+    width: 20px;
+    height: 10px;
+    top: 24px;
+    right: 82px;
+}
+.header-box_title{
+    font-family: "Bloggersansbold", sans-serif;
+    font-weight: 700;
+    font-size: 130px;
+    text-transform: uppercase;
+    color: #FFD324;
+    line-height: 110%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+}
+.header-box_subtitle{
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #FFD324;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+}
+.header-box_text{
+    width: 695px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+.header-box_link{
+    padding: 15px 85px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    color: #1A202C;
+    background-color: #FFD324;
+    box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+    border-radius: 30px;
+}
+.about{
+    margin-bottom: 180px;
+}
+.about-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.about-inner_box{
+    padding: 60px 30px;
+    width: 790px;
+    color: #1A202C;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(142, 162, 170, 0.2);
+    border-radius: 15px;
+    z-index: 15;
+    margin-top: 100px;
+}
+.about-inner_box-title{
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.about-inner_box-text{
+    margin-bottom: 10px;
+}
+.about-inner_gallery{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    right: -310px;
+    top: 0px;
+}
+.about-inner_gallery-img.img--1{
+    width: 760px;
+    height: 662px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.products{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.products-title{
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    color: #1A202C;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.products-wrapper{
+    margin: 0 auto;
+    width: 1505px;
+}
+.products-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2D3748;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+}
+.products-link{
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 15px 70px;
+    border: 1px solid #FFD324;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.products-link.products-link--active{
+    background-color: #FFD324;
+}
+.products-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #1A202C;
+}
+.products-inner_item-img{
+    width: 286px;
+    height: 258px;
+    margin-bottom: 10px;
+}
+.products-inner_item-title{
+    font-family: "Bloggersansbold", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.products-inner_item-cost{
+    font-size: 20px;
+}
+.products-bottom_link{
+    display: inline-block;
+    margin-top: 25px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    background-color: #FFD324;
+    font-size: 20px;
+    color: #1A202C;
+    padding: 15px 100px;
+    border-radius: 30px;
+    margin-right: auto;
+}
+.job{
+    margin-bottom: 150px;
+}
+.job-inner{
+    display: flex;
+   position: relative;
+}
+.job-inner_img{
+    width: 1234px;
+    height: 720px;
+}
+.job-inner_box{
+    position: absolute;
+    padding: 60px 30px;
+    width: 790px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(142, 162, 170, 0.2);
+    border-radius: 15px;
+    color: #1A202C;
+    right: 0;
+    top: 50px;
+}
+.job-inner_box-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+}
+.job-inner_box-text{
+    width: 730px;
+    margin-bottom: 10px;
+}
+.job-inner_box-sub{
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+.job-inner_box-link{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    padding: 15px 145px;
+    background-color: #FFD324;
+    border-radius: 30px;
+}
+.promo{
+    color: #1A202C;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.promo-title{
+    font-size: 60px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.promo-wrap{
+    margin: 0 auto;
+    display: flex;
+    width: 1357px;
+}
+.promo-item{
+    width: 444px;
+}
+.promo-item + .promo-item{
+    margin-left: 30px;
+}
+.promo-item_img{
+    width: 444px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+.promo-item_title{
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.promo-item_text{
+    font-size: 20px;
+}
+.order{
+    width: 100%;
+    height: 540px;
+    background-image: url('../images/order-bg.jpg');
+}
+.order-inner{
+    padding: 80px 0;
+    text-align: center;
+}
+.order-inner_title{
+    font-size: 60px;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.order-inner_text{
+    margin-bottom: 10px;
+}
+.order-inner_text--last{
+    margin-bottom: 60px;
+}
+.order-inner_link{
+    color: #FFD324;
+}
+.order-form{
+    display: flex;
+    justify-content: space-between;
+}
+.order-form_wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.order-form_wrap-sub{
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+.order-form_input{
+    background-color: inherit;
+    width: 444px;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.order-form_input::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.order-form_btn{
+    padding: 15px 99px;
+    color: #2D3748;
+    font-family: "Bloggersansmedium", sans-serif;
+    font-weight: 500;
+    background-color: #FFD324;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+}
